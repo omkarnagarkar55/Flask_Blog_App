@@ -1,7 +1,10 @@
+import time
+app_start_time = time.time()
+print("Application has started :%f" %(app_start_time))
+
 import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
-import time
 
 
 def get_db_connection():
@@ -90,7 +93,8 @@ def delete(id):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    start_time = time.time()
+    app_operational_time = time.time()
+    print("Application start time: %f" % (app_operational_time - app_start_time))
     app.run(host='0.0.0.0', port=5000)
-    end_time = time.time()
-    print("Application run time: %f" % (end_time - start_time))
+    app_end_time = time.time()
+    print("Application run time: %f" % (app_end_time - app_start_time))
