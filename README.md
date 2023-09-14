@@ -2,7 +2,7 @@
 
 This repository contains a Python-Flask blogging application that is deployed on a Docker container.
 
-## 1. Create a Docker ile:-
+## 1. Create a Docker File:-
 
 ![image](https://github.com/omkarnagarkar55/Flask_Blog_App/assets/60735358/a0f65ed4-e598-4f5f-a7ad-cec273b12e93)
 
